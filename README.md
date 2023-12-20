@@ -1,2 +1,2 @@
 # c-codez
-c programs with basic awas advanced approach.
+c programs with basic aw-as advanced approach.
