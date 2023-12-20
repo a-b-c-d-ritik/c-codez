@@ -1,4 +1,4 @@
-// Online C compiler to run C program online
+// c program to add two 2*2 matrix
 #include <stdio.h>
 
 int main() {
