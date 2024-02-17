@@ -1,20 +1,24 @@
-//decimal to binary conversion
 #include<stdio.h>
+
 int main()
-{ 
-int bno=0,dno,temp,r,f=1;
-printf("enter a decimal no:");
-scanf("%d",&dno);
-temp=dno;
-while(dno!=0)
 {
-    r=dno%2;
-    bno=bno+r*f;
-    f=f*10;
-    dno=dno/2;
-}
-printf("binary of %d = %d",temp,bno);
-return 0;
-}
+    int bitarray[32];
+    int num,i=0;
+    printf("enter decimal no:");
+    scanf("%d",&num);
+
+    while(num!=0)
+    {
+        bitarray[i]=num%2;
+        num=num/2;
+        i++;
+    }
+    printf("\n");
+    for(i=i-1;i>=0;i--)
+    {
+        printf("%d",bitarray[i]);
+    }
 
 
+    return 0;
+}
